@@ -134,26 +134,20 @@ html {
     height: 36px;
 }
 
-.h {
+/* .h {
     margin-left: 4px;
     width: 50px;
-}
-
-.h:nth-child(1) {
-    margin-left: 49px;
-}
-
-.vmall_title_right_nav li {
-    float: left;
-    margin-left: 10px;
-    text-align: center;
-    position: relative;
-}
+} */
 
 .vmall_title_right_nav li a {
+
     font-size: 12px;
-    color: #afafaf;
+    color: #777777;
     text-decoration: none;
+}
+
+.vmall_title_right_nav>li>a {
+    color: #afafaf;
 }
 
 .vmall_title_right_nav li a i {
@@ -170,32 +164,23 @@ html {
 }
 
 /* // 每个a添加一个伪元素小竖线 */
-.vmall_title_right_nav>li a::before {
+.vmall_title_right_nav>li::before {
     position: absolute;
     content: '';
     height: 12px;
     top: 12px;
-    left: -10px;
+    left: -4px;
     border-right: 1px solid #403f3f;
 }
 
 /* 让.vmall_title_nav的第一个儿子里的小儿子前面加个属性  就是不让他这个小儿子有右边框 */
-.vmall_title_right_nav>li:first-child a::before {
+.vmall_title_right_nav>li:first-child li::before {
     border-right: none;
 }
 
+/* 给"客户服务"添加定位 */
 .cs_center {
     position: relative;
-}
-
-.cs_center_box {
-    display: none;
-}
-
-.cs_center:hover .cs_center_box {
-    display: block;
-    color: #777777;
-
 }
 
 .vmall_title_right_nav>li:last-child {
@@ -206,9 +191,19 @@ html {
 .more_nb {
     display: none;
     position: absolute;
-    left: -36px;
+    left: -25px;
     top: 36px;
-    width: 124px;
+    width: 106px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.cs_center_box {
+    position: absolute;
+    left: -4px;
+    top: 36px;
+    width: 74px;
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 0px 0px 7px 7px;
@@ -219,20 +214,286 @@ html {
     color: #777777;
 }
 
-.more_nb li a:hover {
-    color: #ca151d;
-}
+
 
 .vmall_title_nav li:last-child:hover .more_nb {
     display: block;
 }
 
-.ll {
-    color: red;
-}
 
-#mor {
+
+.vmall_title_nav>.more_nb_box {
     margin: 0;
     padding-left: 8px;
     padding-right: 3px;
+}
+
+/* 移入“客户服务” 让a的字体颜色发生改变 */
+.vmall_title_right_nav>li.cs_center:hover>a {
+    color: #ca151d;
+}
+
+/* 移入“更多精彩” 让a的字体颜色发生改变 */
+.vmall_title_nav>li.more_nb_box:hover>a {
+    color: #ca151d;
+}
+
+/*  当移入.vmall_title_right_nav亲儿子的li本身的背景颜色发生改变*/
+.vmall_title_right_nav>li:hover.cs_center {
+    background-color: #ffffff;
+}
+
+/* 移入“客户服务” 他的亲儿子的儿子i （精灵图）发生改变*/
+.vmall_title_right_nav>li.cs_center:hover>a>i {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    background-image: url(../images/icon-commonnew.svg);
+    background-position: -85px 0;
+}
+
+/* 让“客户服务”里的每个a本身设置字体颜色 */
+.cs_center_box>li>a {
+    color: #777777;
+}
+
+
+.cs_center_box>li>a:hover {
+    color: #ca151d;
+}
+
+
+
+.cs_center_box {
+    display: none;
+}
+
+.cs_center:hover>.cs_center_box {
+    display: block;
+}
+
+.vmall_title_right_nav li {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    padding-right: 2px;
+    padding-left: 6px;
+}
+
+.vmall_title_right_nav li a i {
+    display: inline-block;
+    height: 10px;
+    background-image: url(../images/icon-commonnew.svg);
+    background-position: -71px 0;
+}
+
+.vmall_title_right_nav>li:first-child::before {
+    border-right: none;
+}
+
+.more_nb>ul>li {
+    margin-right: 0;
+    width: 110px;
+}
+
+/* 网站导航 */
+.web_nav {
+    position: relative;
+}
+
+.web_nav>.web_nav_box {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: -835px;
+    width: 915px;
+    height: 209px;
+    background-color: #ffffff;
+
+}
+
+.vmall_title_right_nav li:hover .web_nav_box {
+    display: block;
+}
+
+.vmall_title_right_nav>li:nth-child(5):hover>a {
+    color: #ca141d;
+
+}
+
+.vmall_title_right_nav>li:nth-child(5):hover>a>i {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    background-image: url(../images/icon-commonnew.svg);
+    background-position: -85px 0;
+}
+
+.vmall_title_right_nav>li:nth-child(5):hover {
+    background-color: #ffffff;
+}
+
+.web_nav>.web_nav_box>.web_nav_boxs {
+    width: 186px;
+    height: 168px;
+    float: left;
+}
+
+.web_nav_boxs>.web_nav_boxto_p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 36px;
+    margin-right: 122px;
+}
+
+.web_nav>.web_nav_box>.web_nav_boxs:nth-child(1) {
+    height: 92px;
+    width: 140px;
+
+}
+
+.web_nav_boxs>.web_nav_boxto {
+    height: 100px;
+    width: 188px;
+
+}
+
+
+
+.web_nav_boxs>.web_nav_boxto_s {
+    height: 122px;
+    width: 140px;
+    margin-top: -21px;
+    color: #777777;
+}
+
+
+.web_nav_boxs>.web_nav_boxto>.web_nav_boxtos {
+    float: left;
+    text-align: center;
+    height: 26px;
+
+    margin-right: 29px;
+}
+
+.web_nav_boxs>.web_nav_boxto>.web_nav_boxtos a {
+    color: #777777;
+    margin-left: 16px;
+
+}
+
+.web_nav>.web_nav_box>.web_nav_boxs>a>i {
+    background-image: url(/images/icon-commonnew.svg);
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 57px;
+    background-position: -197px 5px;
+    margin-top: 37px;
+    margin-left: -1px;
+}
+
+.web_nav_boxs>.web_nav_boxto_c {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 36px;
+    margin-right: 122px;
+}
+
+.web_nav_boxs>.web_nav_boxto {
+    height: 133px;
+    width: 188px;
+    line-height: 2;
+
+}
+
+.web_nav>.web_nav_box>.web_nav_boxs {
+    width: 186px;
+    height: 206px;
+    float: left;
+
+}
+
+.web_nav_boxs>.web_nav_boxto_c-smallbox>.web_nav_boxto-c {
+    float: left;
+    line-height: 2;
+    text-align: initial;
+    margin-right: 15px;
+    margin-left: 17px;
+}
+
+.web_nav_boxs>.web_nav_boxto>.web_nav_boxtos {
+    float: left;
+    text-align: center;
+    height: 26px;
+    margin-right: 21px;
+
+}
+
+
+.web_nav_boxs>.web_nav_boxto_f {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 36px;
+    margin-right: 92px;
+}
+
+.web_nav_boxs .web_nav_boxtos a:hover {
+    color: #ca141d;
+}
+
+.web_nav_boxs>.web_nav_boxto_s a:hover {
+    color: #ca141d;
+}
+
+.phone_nav {
+    position: relative;
+}
+
+.phone_nav>.phone_nav_box {
+    position: absolute;
+    top: 35px;
+    left: -168px;
+    width: 243px;
+    height: 390px;
+    background-color: #ffffff;
+}
+
+.phone_nav>.phone_nav_box img {
+    width: 90px;
+    height: 90px;
+}
+
+.phone_box-boxs>.phone_nav_box_right {
+    float: right;
+    width: 105px;
+    height: 95px;
+    line-height: 2;
+    margin-top: 16px;
+}
+
+.phone_box-boxs>.phone_nav_box_left {
+    float: left;
+    width: 92px;
+    height: 90px;
+    padding-top: 17px;
+    padding-left: 22px;
+}
+
+.phone_box-boxs p {
+    display: inline-block;
+    line-height: 1.5;
+    color: #cb242b;
+}
+
+.phone_box-boxs {
+    height: 128px;
+    padding-left: 11px;
+    padding-bottom: 1px;
+    padding-right: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.phone_box-boxs:nth-child(3) {
+    border-bottom: none;
 }
