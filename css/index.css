@@ -1,0 +1,238 @@
+body,
+html {
+    margin: 0;
+    padding: 0
+}
+
+/* 头部的广告 */
+.vmall_ad {
+    background-image: url(../images/vmall_ad.png);
+    background-repeat: no-repeat;
+    height: 90px;
+    background-size: cover;
+}
+
+.vmall_ad_x {
+    position: absolute;
+    right: 65px;
+    left: 344px;
+    height: 90px;
+    width: 1220px;
+    top: -3px;
+}
+
+.vmall_ad_x a {
+    float: right;
+    height: 24px;
+    width: 24px;
+    border-radius: 60px;
+    margin-top: 11px;
+    border: 1px solid #525988;
+    line-height: 24px;
+    text-align: center;
+    opacity: 0.5;
+    background-color: #424242;
+
+
+}
+
+.vmall_ad_x i {
+    font-size: 22px;
+    color: #f8f8f9;
+}
+
+/*  顶部导航栏整体模块 */
+.vmall_title {
+    background-color: #2e2828;
+    height: 36px;
+    line-height: 36px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    min-width: 1200px;
+}
+
+/* 顶部导航栏包围的盒子 */
+.vmall_title_bigbox {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*  顶部导航栏-左侧的部分 */
+.vmall_title_bigbox_left {
+    width: 544px;
+    height: 36px;
+    position: relative;
+    float: left;
+}
+
+.vmall_title_nav li {
+    position: relative;
+    margin-right: 15px;
+    float: left;
+}
+
+.vmall_title_nav>li a::before {
+    position: absolute;
+    content: '';
+    height: 12px;
+    top: 12px;
+    left: -8px;
+    border-right: 1px solid #403f3f;
+}
+
+/* // 让.vmall_title_nav的第一个儿子里的小儿子前面加个属性  就是不让他这个小儿子有右边框 */
+.vmall_title_nav>li:first-child a::before {
+    border-right: none;
+}
+
+.vmall_title_nav>li a {
+    font-size: 12px;
+    color: #afafaf;
+    text-decoration: none;
+}
+
+.vmall_title_nav>li a:hover {
+    color: #ffffff;
+}
+
+.vmall_title_nav>li a i {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    background-image: url(../images/icon-commonnew.svg);
+    background-position: -71px 0;
+    margin-left: 6px;
+}
+
+.vmall_title_nav li:last-child a:hover {
+    color: #ca151d;
+}
+
+.vmall_title_nav li:last-child:hover {
+    background-color: #FFFFFF;
+}
+
+.vmall_title_nav>li:hover i {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    background-image: url(../images/icon-commonnew.svg);
+    background-position: -85px 0;
+}
+
+.vmall_title_nav>li:last-child {
+    position: relative;
+}
+
+.vmall_title_nav>li:last-child a::before {
+    border-right: none;
+    color: none;
+}
+
+/* vmall-顶部导航栏右侧的部分 */
+.vmall_title_right {
+    float: right;
+    height: 36px;
+}
+
+.h {
+    margin-left: 4px;
+    width: 50px;
+}
+
+.h:nth-child(1) {
+    margin-left: 49px;
+}
+
+.vmall_title_right_nav li {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.vmall_title_right_nav li a {
+    font-size: 12px;
+    color: #afafaf;
+    text-decoration: none;
+}
+
+.vmall_title_right_nav li a i {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    background-image: url(../images/icon-commonnew.svg);
+    background-position: -71px 0;
+    margin-left: 6px;
+}
+
+.vmall_title_right_nav>li a:hover {
+    color: #ffffff;
+}
+
+/* // 每个a添加一个伪元素小竖线 */
+.vmall_title_right_nav>li a::before {
+    position: absolute;
+    content: '';
+    height: 12px;
+    top: 12px;
+    left: -10px;
+    border-right: 1px solid #403f3f;
+}
+
+/* 让.vmall_title_nav的第一个儿子里的小儿子前面加个属性  就是不让他这个小儿子有右边框 */
+.vmall_title_right_nav>li:first-child a::before {
+    border-right: none;
+}
+
+.cs_center {
+    position: relative;
+}
+
+.cs_center_box {
+    display: none;
+}
+
+.cs_center:hover .cs_center_box {
+    display: block;
+    color: #777777;
+
+}
+
+.vmall_title_right_nav>li:last-child {
+    background-color: #424242;
+}
+
+
+.more_nb {
+    display: none;
+    position: absolute;
+    left: -36px;
+    top: 36px;
+    width: 124px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.more_nb>ul>li a {
+    text-decoration: none;
+    color: #777777;
+}
+
+.more_nb li a:hover {
+    color: #ca151d;
+}
+
+.vmall_title_nav li:last-child:hover .more_nb {
+    display: block;
+}
+
+.ll {
+    color: red;
+}
+
+#mor {
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 3px;
+}
