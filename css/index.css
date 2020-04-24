@@ -187,7 +187,7 @@ html {
     background-color: #424242;
 }
 
-
+/* 更多精彩 移入显示内容 */
 .more_nb {
     display: none;
     position: absolute;
@@ -197,16 +197,22 @@ html {
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 0px 0px 7px 7px;
+    z-index: 66;
 }
 
+/* 客户服务 */
 .cs_center_box {
+    display: none;
     position: absolute;
-    left: -4px;
+    left: 0px;
     top: 36px;
-    width: 74px;
+    width: 78px;
     text-align: center;
-    background-color: #FFFFFF;
+    z-index: 66;
     border-radius: 0px 0px 7px 7px;
+
+    background-color: #FFFFFF;
+
 }
 
 .more_nb>ul>li a {
@@ -264,9 +270,6 @@ html {
 
 
 
-.cs_center_box {
-    display: none;
-}
 
 .cs_center:hover>.cs_center_box {
     display: block;
@@ -310,6 +313,8 @@ html {
     width: 915px;
     height: 209px;
     background-color: #ffffff;
+    z-index: 66;
+    border-radius: 0px 0px 7px 7px;
 
 }
 
@@ -474,6 +479,8 @@ html {
     height: 390px;
     background-color: #ffffff;
     display: none;
+    z-index: 66;
+    border-radius: 0px 0px 7px 7px;
 }
 
 .phone_nav:hover .phone_nav_box {
@@ -571,6 +578,8 @@ html {
     width: 448px;
     height: 228px;
     background: #ffffff;
+    z-index: 66;
+
 }
 
 .vmall_title_right_nav>.car_nav>.car_m>.car_nav-k {
