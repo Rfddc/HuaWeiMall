@@ -1094,7 +1094,7 @@
 }
 
 .group_s1 {
-    display: inline-block;
+    display: grid;
     float: left;
 }
 
@@ -1589,10 +1589,10 @@
     height: 20px;
 }
 
-.group_s1 {
+/* .group_s1 {
     display: inline-block;
     float: left;
-}
+} */
 
 .group_s2 {
     float: left;
