@@ -163,21 +163,12 @@
                     <div class="nav_home_text">
                         <ul>
                             <li class="nav_home_list_a"><a href="#"><span>手机</span></a>
-                                <!-- 手机 -->
-                                <!-- <div class="nav_home_list_aa"> -->
-                                <ul class="nav_home_list_aaa">
-                                    <li><a href="">全部手机</a></li>
-                                    <li><a href="">HUAWEI&nbsp;Mate系列</a></li>
-                                    <li><a href="">HUAWEI&nbsp;P系列</a></li>
-                                    <li><a href="">HUAWEI&nbsp;nova系列</a></li>
-                                    <li><a href="">华为畅享系列</a></li>
-                                    <li><a href="">HUAWEI&nbsp;麦芒系列</a></li>
-                                </ul>
+
                                 <!-- </div> -->
                             </li>
-                            <li class="nav_home_list_b"><a href="#"><span>笔记本电脑</span></a>
+                            <li class="nav_home_list_a"><a href="#"><span>笔记本电脑</span></a>
                                 <!-- 笔记本 -->
-                                <ul class="nav_home_list_bbb">
+                                <ul class="nav_home_list_aaa">
                                     <li><a href="">全部手机</a></li>
                                     <li><a href="">HUAWEI&nbsp;Mate系列</a></li>
                                     <li><a href="">HUAWEI&nbsp;P系列</a></li>
@@ -190,8 +181,39 @@
                             <li><a href="#"><span>平板&穿戴</span></a></li>
                             <li><a href="#"><span>智能家居</span></a></li>
                             <li><a href="#"><span>配件</span></a></li>
-                            <li><a href="#"><span>荣耀专区</span></a></li>
+                            <li class="nav_home_list_a noslide"><a href="#"><span>荣耀专区</span></a></li>
                         </ul>
+
+                        <div class="nav_home_list_a">
+                            <div class="nav_home_list_aa">
+                                <!-- 手机 -->
+                                <!-- <div class="nav_home_list_aa"> -->
+                                <ul class="nav_home_list_aaa">
+                                    <li><a href="">全部手机</a></li>
+                                    <li><a href="">HUAWEI&nbsp;Mate系列</a></li>
+                                    <li><a href="">HUAWEI&nbsp;P系列</a></li>
+                                    <li><a href="">HUAWEI&nbsp;nova系列</a></li>
+                                    <li><a href="">华为畅享系列</a></li>
+                                    <li><a href="">HUAWEI&nbsp;麦芒系列</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav_home_list_aa">
+                                <!-- bijiben -->
+                                <!-- <div class="nav_home_list_aa"> -->
+                                <ul class="nav_home_list_aaa">
+                                    <li><a href="">全部手机</a></li>
+                                    <li><a href="">HUAWEI&nbsp;Mate系列</a></li>
+                                    <li><a href="">HUAWEI&nbsp;P系列</a></li>
+                                    <li><a href="">HUAWEI&nbsp;nova系列</a></li>
+                                    <li><a href="">华为畅享系列</a></li>
+                                    <li><a href="">HUAWEI&nbsp;麦芒系列</a></li>
+                                </ul>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
                 <!-- 右边的部分 -->
@@ -214,21 +236,26 @@
     <script>
         $(function () {
             $('.nav_home_list_a').mouseover(function () {
-                $('.nav_home_list_aaa').stop().slideDown(190)
-                $('.nav_home_list_aaa').show()
+                // $('.nav_home_list_aaa').stop().slideDown(190)
+                // $('.nav_home_list_aaa').show()
+                if (!$(this).hasClass('noslide')) {
+                    $(this).children('.nav_home_list_aaa').stop().slideDown(190).parent().siblings()
+                        .find('.nav_home_list_aaa').css("display", "none")
+
+                }
             })
-            $('.nav_home_list_a').mouseout(function () {
-                $('.nav_home_list_aaa').stop().slideUp(190)
-                $('this').hide()
-            })
-            $('.nav_home_list_b').mouseover(function () {
-                $('.nav_home_list_bbb').stop().slideDown(190)
-                $('.nav_home_list_bbb').show()
-            })
-            $('.nav_home_list_b').mouseout(function () {
-                $('.nav_home_list_bbb').stop().slideUp(190)
-                $('this').hide()
-            })
+            // $('.nav_home_list_a').mouseout(function () {
+            //     $('.nav_home_list_aaa').stop().slideUp(190)
+            //     $('this').hide()
+            // })
+            // $('.nav_home_list_b').mouseover(function () {
+            //     $('.nav_home_list_bbb').stop().slideDown(190)
+            //     $('.nav_home_list_bbb').show()
+            // })
+            // $('.nav_home_list_b').mouseout(function () {
+            //     $('.nav_home_list_bbb').stop().slideUp(190)
+            //     $('this').hide()
+            // })
         })
     </script>
 </body>
