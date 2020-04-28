@@ -115,11 +115,12 @@
 }
 
 .nav_home_img>em {
-    display: inline-block;
+    float: left;
+    display: grid;
     width: 1px;
     height: 20px;
     margin-left: 6px;
-    float: left;
+
     background-color: black;
     margin-right: 6px;
     margin-top: 7px;
@@ -147,34 +148,34 @@
     position: relative;
 }
 
-.nav_home_text {
+.nav_home_text_center {
     height: 40px;
-    float: left;
+
     line-height: 40px;
 }
 
-.nav_home_text>ul>li {
+.nav_home_text_center>ul>li {
     float: left;
     margin-right: 20px;
     height: 58px;
 }
 
-.nav_home_text>ul {
+.nav_home_text_center>ul {
     height: 40px;
     width: 467px;
 }
 
-.nav_home_text>ul>li>a>span {
+.nav_home_text_center>ul>li>a>span {
     font-size: 16px;
 }
 
-.nav_home_text>ul>li>a {
+.nav_home_text_center>ul>li>a {
     text-decoration: none;
     height: 40px;
     display: block;
 }
 
-.nav_home_text>ul>li:hover>a {
+.nav_home_text_center>ul>li:hover>a {
     border-bottom: 2px solid #ca141d;
     color: #ca141d;
 }
@@ -262,4 +263,71 @@
 .nav_home_list_b,
 .nav_home_list_a {
     position: relative;
+}
+
+.nav_home_list_ycbox li {
+    float: left;
+}
+
+.nav_home_text_center>ul {
+    height: 40px;
+    width: 771px;
+}
+
+
+
+.nav_home_list_ycbox {
+    position: absolute;
+    height: 50px;
+    background-color: #ffffff;
+    width: 1549px;
+    left: -369px;
+    padding-left: 371px;
+    line-height: 4;
+}
+
+.nav_home_list_a a {
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav_home_ul>li {
+    float: left;
+}
+
+.nav_home_text_center>ul {
+    height: 40px;
+    width: 868px;
+}
+
+.nav_home_list_ycbox {
+    box-shadow: 0 3px 3px 0 rgba(121, 121, 121, 0.26);
+    height: 50px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border: 1px solid rgb(235, 235, 235);
+    display: none;
+}
+
+.nav_home_text_center>ul>li:hover>a {
+    border-bottom: 2px solid #ca141d;
+}
+
+.nav_home_list_a {
+    margin-top: 15px;
+}
+
+.nav_home_text_center>ul {
+    height: 40px;
+    width: 868px;
+    line-height: 1;
+}
+
+.nav_home_text_center>ul>li>a {
+    text-decoration: none;
+    height: 23px;
+    display: block;
 }
