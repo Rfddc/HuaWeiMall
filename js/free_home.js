@@ -3,18 +3,20 @@ $(function () {
     $('.nav_home_ul li').mouseenter(function () {
         var dname = $(this).data('name')
         if (!$(this).hasClass('noslide')) {
+   
             $('.nav_home_list_ycbox').stop().slideDown()
             // 获取到的dname和哪个id相同
             $('.nav_home_list_ycbox ul').each(function (index, item) {
                 if ($(item).attr('id') === dname) {
                     // 这个对应下面的ul也显示出来
-                    $(item).stop().slideDown().siblings().stop().slideUp()
+                    // $(item).stop().slideDown().siblings().stop().slideUp()
+                    $(item).css("display","block").siblings().css("display","none")
                     // break;
                     return false;
                 }
             })
         } else {
-            $('..nav_home_list_ycbox').stop().slideUp()
+            $('.nav_home_list_ycbox').stop().slideUp()
         }
     })
     // 离开包2个盒子的最大盒子
