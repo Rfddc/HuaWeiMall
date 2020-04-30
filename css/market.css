@@ -284,6 +284,7 @@
     width: 962px;
     margin: auto;
     padding-top: 10px;
+    height: 560px;
 }
 
 .Boutique {
@@ -291,7 +292,7 @@
     height: 500px;
     border: 1px solid #e5e5e5;
     background-color: #ffffff;
-
+    float: left;
 }
 
 .Boutique_left_box {
@@ -331,24 +332,28 @@
     width: 714px;
     height: 453px;
     text-align: center;
-    margin-top: 12px;
+
 }
+
 .boutique_all_app_ul {
     position: relative;
     width: 129px;
     height: 151px;
-    margin-left: 5px;
+    margin-left: 8px;
 }
+
 .boutique_all_app_ul:hover {
     background-color: #eaf4f9;
     border-radius: 6px;
 }
 
+
 .boutique_all_app_li {
     width: 129px;
-    height: 84px;
+    height: 73px;
     padding-top: 10px;
 }
+
 
 .boutique_all_app_li>a>img {
     width: 64px;
@@ -376,6 +381,10 @@
     color: #666666;
 }
 
+.boutique_all_app_ul:hover .boutique_all_app_li_x {
+    display: block;
+}
+
 .boutique_all_app_li_x {
     text-align: center;
     color: #666;
@@ -386,9 +395,268 @@
     line-height: 24px;
     background-color: #09b0b7;
     position: absolute;
-    top: 104px;
+    top: 106px;
     left: 22px;
+    border-radius: 6px;
+    display: none;
 }
-.boutique_all_app_li_x>a>span{
+
+.boutique_all_app_li_x>a {
     color: #ffffff;
+    font-weight: bold;
+}
+
+.boutique_all_app_li_x>a>span {
+    color: #ffffff;
+}
+
+.boutique_all_app_ul {
+    float: left;
+}
+
+.Boutique_right {
+    width: 237px;
+    height: 182px;
+    float: right;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-left: 5px;
+}
+
+.Boutique_right_a {
+    background-image: url(/images/market/market_sjb.png);
+    background-repeat: no-repeat;
+    width: 237px;
+    height: 182px;
+    padding-top: 14px;
+}
+
+.Boutique_right_aa {
+    background: url(/images/market/market_sm.png);
+    background-size: 96px 96px;
+    background-repeat: no-repeat;
+    width: 98px;
+    height: 98px;
+    background-position: center top;
+    margin: auto;
+}
+
+.Boutique_right_b {
+    width: 120px;
+    height: 30px;
+    /* margin-top: 21px; */
+    padding-top: 102px;
+    padding-left: 12px;
+}
+
+.Boutique_right_b>span {
+    color: #7f7f7f;
+}
+
+.Boutique_right_c {
+    width: 114px;
+    height: 24px;
+    background-color: #28c0c6;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 6px;
+    padding-left: -19px;
+    margin-left: -18px;
+    margin-top: 11px;
+}
+
+.Boutique_right_c>span>a {
+    color: #fefefc;
+    text-decoration: none;
+}
+
+.Boutique_right_c>span>img {
+    vertical-align: text-bottom;
+}
+
+.market_right_box {
+    width: 237px;
+    height: 158px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+.market_right_box_mr {
+    width: 235px;
+    height: 45px;
+    margin-left: 10px;
+    line-height: 45px;
+}
+
+.market_right_box_mr>span {
+    font-size: 16px;
+}
+
+.market_right_box_bd {
+    width: 84px;
+    height: 68px;
+    float: left;
+}
+
+.market_right_box_bd_box {
+    width: 221px;
+    height: 68px;
+    margin-left: 11px;
+
+}
+
+.market_right_box_bd>img {
+    width: 64px;
+    height: 64px;
+}
+
+.market_right_box_ks {
+    width: 211px;
+    height: 25px;
+}
+
+.market_right_box_llq>p>a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #666666;
+}
+
+.market_right_box_llq>p {
+    margin-bottom: 16px;
+}
+
+.market_right_box_llq>a {
+    text-decoration: none;
+    padding-left: 25px;
+    padding-top: 5px;
+    margin-top: 18px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    background-color: #28c0c6;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.market_right_box_ks {
+    width: 211px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 2px;
+    color: #7c7c7c;
+}
+
+.banking_one_box {
+    float: left;
+    width: 230px;
+    height: 362px;
+}
+
+.banking {
+
+    height: 436px;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e4;
+    /* float: left; */
+    width: 960px;
+    margin: auto;
+}
+
+.banking_one_box_a {
+    width: 216px;
+    height: 52px;
+    margin: auto;
+    margin-top: 13px;
+}
+
+.banking_one_box_a_a {
+    float: left;
+
+}
+
+.banking_one_box_a_a>em {
+    color: #fff;
+    background: url(/images/market/banking.gif) no-repeat -3px -187px;
+    width: 13px;
+    height: 13px;
+    padding-right: 4px;
+    padding-left: 3px;
+}
+
+
+
+.banking_one_box_b_a {
+    float: left;
+    margin-left: 16px;
+    margin-top: -8px;
+}
+
+.banking_one_box_b_a>img {
+    width: 48px;
+    height: 48px;
+}
+
+.banking_one_box_b {
+    float: left;
+    margin-left: 13px;
+    margin-top: -7px;
+}
+
+.banking_one_box_b>a {
+    width: 72px;
+    height: 24px;
+    line-height: 35px;
+    text-align: center;
+    padding: 6px 33px;
+    background-color: #28c0c6;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.banking_one_box_b>p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.banking_center {
+    width: 962px;
+    margin: auto;
+}
+
+.banking_one_box_p {
+    width: 239px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.banking_one_box_a_aa {
+    display: none;
+    float: left;
+    width: 216px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 7px;
+}
+
+.banking_one_box_a_aa>em {
+    color: #fff;
+    background: url(/images/market/banking.gif) no-repeat -3px -187px;
+    width: 13px;
+    height: 13px;
+    padding-right: 4px;
+    padding-left: 3px;
+}
+
+.banking_one_box_a_aa>a {
+    margin-left: 7px;
+    text-decoration: none;
+    color: #777777;
+    margin-right: 101px;
 }
