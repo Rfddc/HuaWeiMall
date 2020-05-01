@@ -563,6 +563,8 @@
     margin: auto;
 }
 
+/* 王者荣耀 */
+.banking_one_box_a_b,
 .banking_one_box_a {
     width: 216px;
     height: 52px;
@@ -570,11 +572,13 @@
     margin-top: 13px;
 }
 
+.banking_one_box_a_a_b,
 .banking_one_box_a_a {
     float: left;
 
 }
 
+.banking_one_box_a_a_b>em,
 .banking_one_box_a_a>em {
     color: #fff;
     background: url(/images/market/banking.gif) no-repeat -3px -187px;
@@ -585,24 +589,27 @@
 }
 
 
-
+.banking_one_box_b_a_b,
 .banking_one_box_b_a {
     float: left;
     margin-left: 16px;
     margin-top: -8px;
 }
 
+.banking_one_box_b_a_b>img,
 .banking_one_box_b_a>img {
     width: 48px;
     height: 48px;
 }
 
+.banking_one_box_b_b,
 .banking_one_box_b {
     float: left;
     margin-left: 13px;
     margin-top: -7px;
 }
 
+.banking_one_box_b_b>a,
 .banking_one_box_b>a {
     width: 72px;
     height: 24px;
@@ -616,6 +623,7 @@
     border-radius: 4px;
 }
 
+.banking_one_box_b_b>p,
 .banking_one_box_b>p {
     font-size: 14px;
     font-weight: bold;
@@ -625,6 +633,7 @@
     width: 962px;
     margin: auto;
 }
+
 
 .banking_one_box_p {
     width: 239px;
@@ -645,6 +654,8 @@
     margin-left: 7px;
 }
 
+
+.banking_one_box_a_aa_b>em,
 .banking_one_box_a_aa>em {
     color: #fff;
     background: url(/images/market/banking.gif) no-repeat -3px -187px;
@@ -654,9 +665,14 @@
     padding-left: 3px;
 }
 
+.banking_one_box_a_aa_b>a,
 .banking_one_box_a_aa>a {
     margin-left: 7px;
     text-decoration: none;
     color: #777777;
     margin-right: 101px;
+}
+
+.banking_one_box_a_b {
+    display: block;
 }
