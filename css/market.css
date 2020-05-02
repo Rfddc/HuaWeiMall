@@ -275,8 +275,12 @@
     position: relative;
 }
 
+#navBar>li>a:hover {
+    color: #db2121;
+}
+
 .main {
-    height: 1492px;
+    height: 1416px;
     background-color: #f7f7f7;
 }
 
@@ -393,14 +397,16 @@
     width: 83px;
     height: 24px;
     line-height: 24px;
-    background-color: #09b0b7;
+    background-color: #28c0c6;
     position: absolute;
     top: 106px;
     left: 22px;
     border-radius: 6px;
     display: none;
 }
-
+.boutique_all_app_li_x:hover{
+    background-color:#09b0b7 ;
+}
 .boutique_all_app_li_x>a {
     color: #ffffff;
     font-weight: bold;
@@ -890,6 +896,212 @@
 
 
 #s {
-    color:#66667a;
+    color: #66667a;
     background: url(/images/market/banking.gif) no-repeat -30px -186px;
+}
+
+.gd {
+    width: 216px;
+    height: 20px;
+
+}
+
+.gd>a {
+    float: right;
+    color: #24b9bf;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.Topic {
+
+    height: 347px;
+
+}
+
+.Topic_center {
+    width: 962px;
+    margin: auto;
+}
+
+.Topic_box {
+    border: 1px solid #e5e5e5;
+    width: 962px;
+    height: 347px;
+    background-color: #ffffff;
+}
+
+.Topic_left {
+    float: left;
+    width: 326px;
+    height: 368px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.Topic_one {
+    width: 362px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.Topic_one>span {
+    font-size: 16px;
+
+}
+
+.Topic_text {
+    width: 326px;
+    height: 78px;
+    padding-top: 20px
+}
+
+.Topic_text>h5 {
+    font-size: 14px;
+    color: #333;
+}
+
+.Topic_text>h5:hover {
+    color: #87b9bf;
+}
+
+.Topic_text>p {
+    font-size: 12px;
+    padding-top: 5px;
+    line-height: 24px;
+    color: #333;
+}
+
+.Topic_right {
+    width: 582px;
+    height: 295px;
+    float: left;
+}
+
+.Topic_gd {
+    height: 45px;
+    line-height: 45px;
+    float: right;
+}
+
+.Topic_ul {
+    width: 582px;
+    height: 50px;
+}
+
+.Topic_ul {
+    width: 582px;
+    height: 50px;
+    margin-top: 65px;
+}
+
+.Topic_ul>ul>li {
+    float: left;
+    width: 145px;
+    height: 125px;
+}
+
+.Topic_ul>ul>li>a>img {
+    width: 138px;
+    height: 71px;
+}
+
+.Topic_gd {
+    height: 45px;
+    line-height: 45px;
+    float: right;
+    margin-top: 11px;
+
+}
+
+.Topic_gd>a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #24b9bf;
+}
+
+.Topic_ul>ul>li>a {
+    text-decoration: none;
+}
+
+.Topic_ul>ul>li>a>p {
+    width: 150px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.Topic_left {
+    float: left;
+    width: 312px;
+    height: 368px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.Topic_right {
+    width: 594px;
+    height: 295px;
+    float: left;
+}
+
+
+.user_box_c>span>img {
+    width: 20px;
+    height: 20px;
+}
+
+.user {
+    width: 100%;
+    background-image: url(/images/market/ddd.gif);
+    height: 240px;
+}
+
+.user_center {
+    width: 960px;
+    margin: auto;
+}
+
+.user_box_c, .user_box_b, .user_box_a {
+    height: 23px;
+    line-height: 23px;
+}
+
+.Topic_left {
+    float: left;
+    width: 312px;
+    height: 330px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.user {
+    width: 100%;
+    background-image: url(/images/market/ddd.gif);
+    height: 240px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.user_box_d{
+    width: 200px;
+    height: 110px;
+}
+
+.user_box_d {
+    width: 200px;
+    height: 110px;
+    /* text-align: center; */
+    margin-left: 402px;
+    margin-top: 27px;
+}
+
+.user_box_d>a>p{
+    margin-top: 9px;
+    margin-left: 1px;
+}
+
+.user_box_d>a{
+    text-decoration: none ;
 }
