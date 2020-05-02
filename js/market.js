@@ -50,16 +50,14 @@ $(function () {
   }
   // 鼠标离开事件
 
-  $('.banking_one_box_a').on("mouseover", function () {
-    $(this).css("display", "block")
-  })
-  $('.banking_one_box_a').on("mouseout", function () {
-    $(this).css("display", "none")
-    $('.banking_one_box_a_aa').css("display","block")
+  $('.banking_one_box_a_aa_b').on("mouseover", function () {
+    $(this).addClass('active_box').siblings('.banking_one_box_a_aa_b').removeClass('active_box')
   })
 
 
+  $('.banking_one_box').on("mouseleave ", function () {
+    $('.wz').addClass('active_box').siblings('.banking_one_box_a_aa_b').removeClass('active_box')
+  })
 
 
-
-})
+}) 
