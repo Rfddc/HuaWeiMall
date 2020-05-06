@@ -263,4 +263,34 @@
 }
 
 
+.main_left_img_x {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
+.main_left_img {
+    position: relative;
+}
+
+.hwid-tip-content {
+    position: absolute;
+    left: 48px;
+    top: 66px;
+}
+
+.hwid-text-container {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hwid-tip-content>a {
+    padding: 6px 27px;
+    background-color: #ca141d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
